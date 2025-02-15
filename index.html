@@ -1,11 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html questions</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
+
 <body>
     <h1>HTML QUESTIONS</h1>
+    <b>Aniket</b>
+    <strong>Aniket</strong>
+    <section>
+        <h2>About Us</h2>
+        <p>We provide web development services.</p>
+    </section>
+    <article>
+        <h2>Latest News</h2>
+        <p>New web trends are emerging in 2025.</p>
+    </article>
+    <ol>
+        <li>Apple</li>
+        <li>Banana</li>
+    </ol>
+    <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+    </ul>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+    </dl>
+
+    <table border="solid">
+        <caption>Monthly Sales Report</caption>
+        <tr>
+            <th>Month</th>
+            <th>Sales</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$5000</td>
+        </tr>
+    </table>
+    <table border="solid">
+        <caption>aniket data</caption>
+        <tr>
+            <th>name</th>
+            <th>surname</th>
+        </tr>
+        <tr>
+            <td>aniket</td>
+            <td>tikkal</td>
+        </tr>
+    </table>
+    <textarea rows="4" cols="30" placeholder="Enter your message..."></textarea>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <form>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+    </form>
+    <form action="">
+        <label><input type="checkbox" name="subscribe" value="yes"> Subscribe to newsletter</label>
+        <label><input type="checkbox" name="subscribe" value="yes"> Subscribe to newsletter</label>
+
+    </form>
+
+    <form action="">
+        <input type="email" required placeholder="Enter your email">
+        <input type="button" value="submit">
+        <input type="text" value="Fixed Value" readonly>
+        <input type="date">
+
+    </form>
+
+    <label for="fruit">Choose a fruit:</label>
+    <select id="fruit" name="fruit">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+    </select>
+    <audio controls>
+        <source src="https://youtu.be/VWax-YiHvg4?si=Ju2E79SGdBzGWSRR" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <label for="fileProgress">File Upload Progress:</label>
+    <progress id="fileProgress" value="50" max="100"></progress>
+
+    <p>Event starts on <time datetime="2025-03-10T18:00">March 10, 2025, at 6 PM</time>.</p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>$2</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>$1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>$3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th colspan="2">Name & Age</th>
+        </tr>
+        <tr>
+            <td>Amit</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language, used for structuring web pages.</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets, used for styling web pages.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>A programming language for making web pages interactive.</dd>
+    </dl>
+    <ol reversed>
+        <li>Third</li>
+        <li>Second</li>
+        <li>First</li>
+    </ol>
+    <img src="image.jpg" usemap="#image-map" width="500">
+    <map name="image-map">
+        <area shape="rect" coords="50,50,150,150"
+            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ718nztPNJfCbDJjZG8fOkejBnBAeQw5eAUA&s"
+            alt="Page 1">
+    </map>
+    <form>
+        <input type="text" name="name" required minlength="3" maxlength="10" pattern="[A-Za-z]+"
+            placeholder="Enter your name">
+        <input type="email" name="email" required>
+        <input type="submit" value="Submit">
+    </form>
+    <form action="submit.php" method="post">
+        <input type="hidden" name="userID" value="12345">
+        <input type="text" name="username" placeholder="Enter your name">
+        <input type="submit" value="Submit">
+    </form>
+
+
 </body>
+
 </html>
