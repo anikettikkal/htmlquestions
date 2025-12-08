@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter project using js only</title>
+</head>
+<body>
+    <div>Counter Project</div>
+    <div id="counterValue">0</div>
+    <button id="incre" onclick="increaseVal()">increment</button>
+    <button id="decre" onclick="decreaseVal()">decrement</button>
+    <button id="reset" onclick="reset()">reset</button>
+
+    <script>
+        let count = 0;
+        function updateDisplay(){
+            document.getElementById('counterValue').textContent= count;
+        }
+        function increaseVal(){
+            count++;
+            updateDisplay();
+        }
+        function decreaseVal(){
+            count--;
+            updateDisplay()
+        }
+
+        function reset(){
+            count=0;
+            updateDisplay()
+        }
+
+    </script>
+</body>
+</html>
