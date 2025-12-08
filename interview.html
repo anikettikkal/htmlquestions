@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Interview Practice</title>
 </head>
+
 <body>
     <!-- semantic tags -->
     <header></header>
@@ -14,7 +16,8 @@
     <article>aniket</article>
 
     <!-- block level elements -->
-    <div></div> <p></p>
+    <div></div>
+    <p></p>
     <!-- inline elements -->
     <span></span> <a href="#"></a>
 
@@ -45,5 +48,66 @@
         <li>avi</li>
     </ul>
 
+
+    <!-- What is the placeholder attribute? -->
+    <input type="text" placeholder="enter your name">
+
+    <form style="display:block; justify-content: center;" action="">
+        <label for="Name">
+            Name:
+            <input type="text" placeholder="enter name" required>
+        </label> <br>
+        <label for="">
+            email:
+            <input type="email" placeholder="enter email" required>
+        </label><br>
+        <label for="">
+            password:
+            <input type="password" placeholder="enter password" required>
+        </label><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <!-- audio tag -->
+    <audio controls>
+        <source src="https://youtu.be/xp5j2IHyTgs?si=l0_bzaHxyxP9wFfr" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+
+    <!-- VIDEO TAG  -->
+    <video width="320" height="240" controls>
+        <source src="https://youtu.be/xp5j2IHyTgs?si=l0_bzaHxyxP9wFfr" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xp5j2IHyTgs?si=oELUwbNMnvToFABV"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
+
+
+
+    <!-- progress bar -->
+    <progress value="70" max="100"></progress>
+    <meter value="0.6">60%</meter>
+
+
+    <!-- contenteditable attribute -->
+    <div contenteditable="true">Edit this text</div>
+
+
+
+    <!-- CANVAS TAG  -->
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(10, 10, 150, 50);
+    </script>
+
 </body>
+
 </html>
