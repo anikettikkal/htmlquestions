@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 10px;
+            margin: 10px;
+            background: lightgray;
+        }
+
+        .static {
+            position: static;
+        }
+
+        .relative {
+            position: relative;
+            height: 150px;
+            background: lightblue;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: coral;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: yellow;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">Static</div>
+
+    <div class="relative">
+        Relative
+        <div class="absolute">Absolute</div>
+    </div>
+
+    <div class="fixed">Fixed</div>
+
+    <div class="sticky">Sticky Header</div>
+
+    <p style="height:1500px;">Scroll to see sticky & fixed</p>
+
+</body>
+
+</html>
